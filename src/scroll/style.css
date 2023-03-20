@@ -13,12 +13,25 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  padding-top: 50px;
-  box-sizing: border-box;
+  position: relative;
+  z-index: 10;
 }
 
 canvas {
   position: fixed;
   left: 0;
   top: 0;
+}
+
+.page h1 {
+  margin: 60px;
+  font-size: 40px;
+}
+
+.page h3 {
+  font-size: 30px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

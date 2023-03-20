@@ -1,0 +1,60 @@
+{
+  "nodes": [
+  {
+  "children" : [1,4],
+  "name":"single_station" ,
+  "extensions":{
+  "props" : 
+  { 
+ "room_inner_area": 15
+  },
+  "ifc_model_type":"ifcRoom"
+  }
+  },
+  {
+  "children" : [2,3],
+  "name":"wall1",
+  "extensions":{
+  "props" : 
+  {
+  "depth":0.2,
+  "length": 3,
+  "height":2.8
+  },
+  "ifc_model_type":"ifcWall"
+  }
+  },
+  { 
+  "name":"wall-face1",
+  "mesh": 0
+  },
+  { 
+  "name":"wall-face2",
+  "mesh": 0,
+  "translation" : [ 1.0, 0.0, 0.0 ]
+  },
+  {
+  "children" : [5,6],
+  "name":"win1",
+  "extensions":{
+  "props" : 
+  {
+  "depth": 0.8,
+  "length": 1,
+  "height":2.8
+  },
+ "ifc_model_type":"ifcWindow"
+  }
+  },
+  { 
+  "name":"win1-face1",
+  "mesh": 0,
+  "translation" : [ 1.0, 1.0, 0.0 ]
+  },
+  { 
+  "name":"win1-face2",
+  "mesh": 0,
+  "translation" : [ 1.0, 2.0, 0.0 ]
+  }
+  ]
+}

@@ -12,7 +12,7 @@ const scene = new THREE.Scene();
 // 2. 创建相机
 const cameraGroup = new THREE.Group();
 const camera = new THREE.PerspectiveCamera(77, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(0, 0, 30);
+camera.position.set(0, 0, 20);
 cameraGroup.add(camera);
 scene.add(cameraGroup);
 // 3. 创建几何体
