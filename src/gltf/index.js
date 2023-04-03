@@ -77,7 +77,7 @@ scene.background = new THREE.Color(0xf0f0f0);
 // 加载gltf
 const gltfLoader = new GLTFLoader();
 
-gltfLoader.loadAsync("./gltf/solid_gen.gltf").then((gltf) => {
+gltfLoader.loadAsync("./gltf/1.gltf").then((gltf) => {
   console.log('gltf-scene', gltf);
   const root = gltf.scene;
   setDoubleSide(root)
