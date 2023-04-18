@@ -1,0 +1,141 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "byteOffset": 0,
+      "componentType": 5123,
+      "normalized": false,
+      "count": 3,
+      "type": "SCALAR",
+      "max": [
+        2
+      ],
+      "min": [
+        0
+      ]
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 0,
+      "componentType": 5126,
+      "normalized": false,
+      "count": 3,
+      "type": "VEC3"
+    }
+  ],
+  "asset": {
+    "generator": "pygltflib@v1.15.5",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteOffset": 8,
+      "byteLength": 36,
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteOffset": 8,
+      "byteLength": 36,
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "data:application/octet-stream;base64,AAABAAIAAAAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAAAAAACAPwAAAAA=",
+      "byteLength": 44
+    }
+  ],
+  "meshes": [
+    {
+      "name":"wall-face1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 1
+          },
+          "mode": 4
+        
+        }
+      ],
+      "extensions":{
+        "mesh_info" : 
+          {
+            "indices":0,
+            "mesh_name": "wall"
+          }
+      }
+    }
+  ],
+  "nodes": [
+    {
+      "children" : [1,4],
+      "name":"single_station",
+      "extensions":{
+          "props" : 
+          { 
+            "room_inner_area": 15
+          },
+          "ifc_model_type": { "class": "ifcRoom" }
+      }
+     },
+    {
+      "children" : [2,3],
+      "name":"wall1",
+      "extensions":{
+        "props" : 
+          {
+            "width":2,
+            "length": 3
+          },
+          "ifc_model_type": { "class": "ifcWall" }
+      }
+    },
+    { 
+      "name":"wall-face1",
+      "mesh": 0
+    },
+    { 
+      "name":"wall-face2",
+      "mesh": 0,
+      "translation" : [ 1.0, 0.0, 0.0 ]
+    },
+    {
+      "children" : [5,6],
+      "name":"win1" ,
+      "extensions":{
+        "props" : 
+          {
+            "width":2,
+            "length": 3
+          },
+          "ifc_model_type": { "class": "ifcOpenning" }
+      }
+    },
+    { 
+      "name":"win1-face1",
+      "mesh": 0,
+      "translation" : [ 1.0, 1.0, 0.0 ]
+
+    },
+    { 
+      "name":"win1-face2",
+      "mesh": 0,
+      "translation" : [ 1.0, 2.0, 0.0 ]
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "extensions": {
+    "single_station": {}
+  },
+  "extensionsUsed": [
+    "single_station"
+  ]
+}

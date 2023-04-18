@@ -1,4 +1,8 @@
 .vscode
 node_modules
 .parcel-cache
-dist
+
+/dist/*
+!dist/assets
+!dist/gltf
+!dist/textures
