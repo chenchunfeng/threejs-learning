@@ -78,7 +78,7 @@ scene.background = new THREE.Color(0xf0f0f0);
 const gltfLoader = new GLTFLoader();
 
 // gltfLoader.loadAsync("./gltf/1.gltf").then((gltf) => {
-gltfLoader.loadAsync("./gltf/FocusS70LLS082119678_深圳龙岗区上海宝冶阿波罗人才安居项目-3栋-8层-初测_063_20230407144254_1.gltf").then((gltf) => {
+gltfLoader.loadAsync("./gltf/标准间7D14F_001.gltf").then((gltf) => {
   console.log('gltf-scene', gltf);
   const root = gltf.scene;
   setDoubleSide(root)
@@ -129,6 +129,9 @@ function frameArea(sizeToFitOnScreen, boxSize, boxCenter, camera) {
 function setDoubleSide(obj) {
   if (obj.isMesh) {
     obj.material.side = THREE.DoubleSide;
+    obj.material = obj.material.clone();
+    obj.material.transparent = true;
+    obj.material.opacity = 0.4
   }
 
   if (obj.children && obj.children.length > 0) {
